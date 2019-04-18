@@ -1,23 +1,19 @@
-@extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laravel</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+        <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet" />
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnerUz3TeqY-75uA2dfCa7ZQuV0jHkTS4" ></script>
+        <meta name="csrf-token" value="{{ csrf_token() }}" />
+    </head>
+    <body>
+        <div id="app">
+            
         </div>
-    </div>
-</div>
-@endsection
+        <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
+    </body>
+</html>
