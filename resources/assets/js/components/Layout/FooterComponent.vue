@@ -39,7 +39,7 @@
                     <i class="fa fa-angle-right"></i> <a href="#">Legal</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="fa fa-angle-right"></i> <a href="#">Agent Admin</a>
+                    <i class="fa fa-angle-right"></i> <a :href="'/login '">Agent Admin</a>
                   </li>
                   <li class="item-list-a">
                     <i class="fa fa-angle-right"></i> <a href="#">Careers</a>

@@ -5,6 +5,8 @@ import AboutComponent from './components/AboutComponent.vue';
 import PropertyComponent from './components/PropertyComponent.vue';
 import ContactComponent from './components/ContactComponent.vue';
 import PropertySingleComponent from './components/PropertySingleComponent.vue';
+import LoginComponent from './components/Auth/LoginComponent';
+import RegisterComponent from './components/Auth/RegisterComponent';
 
 
 
@@ -35,6 +37,16 @@ export const myroutes = [
         name: 'property-single',
         path: '/property-single/:id?',
         component: PropertySingleComponent
+    },
+    {
+        name: 'login',
+        path: '/login',
+        component: LoginComponent
+    },
+    {
+        name: 'register',
+        path: '/register',
+        component: RegisterComponent
     }
   ];
 
