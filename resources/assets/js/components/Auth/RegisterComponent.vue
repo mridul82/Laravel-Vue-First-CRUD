@@ -61,9 +61,10 @@ export default {
     methods: {
         submit() {
             axios.post('/api/register', this.register).then(response => {
-                console.log(response);
+                console.log(response.data);
                 this.users = response.data;
-                console.log(this.users);
+                console.log(this.users.data);
+                this.$router.push({name: 'login'});
             })
         }
     }
